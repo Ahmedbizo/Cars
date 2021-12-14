@@ -2,7 +2,7 @@ import React from "react";
 import cars from "../../public/api/cars.json";
 import { Container, Row, Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-//import {Price} from '../../pages/price';
+import {Price} from '../../pages/price';
 
 interface cars {
   id: string;
@@ -28,6 +28,7 @@ export const CarInfo: React.FC = () => {
         <Card.Text className="price"> Prise : {item.price}</Card.Text>
         <a href="/learn/" className="btn btnn-link" role="button">LEARN </a>
         <a href="/shop/" className="btn btnn-link" role="button">SHOP </a>
+        <Price/>
         
         </Card.Body>
         </Card>
