@@ -1,8 +1,8 @@
 import React from "react";
 import cars from "../../public/api/cars.json";
-import { Container, Row, Card, Placeholder } from "react-bootstrap";
+import { Container, Row, Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {Price} from '../../pages/price';
+
 
 interface cars {
   id: string;
@@ -16,7 +16,7 @@ interface cars {
 export const CarInfo: React.FC = () => {
   return (
     <div>
-          
+         
     < Container fluid className="card-example d-flex  flex-nowrap ">
     {cars.map((item, i) =>
     <Row className="card-example d-flex  flex-nowrap " >  
@@ -36,9 +36,6 @@ export const CarInfo: React.FC = () => {
     </Row>
     
     )}  
-
-      
-    
   </Container>
  
   </div>
