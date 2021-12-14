@@ -24,11 +24,11 @@ export const CarInfo: React.FC = () => {
         <Card.Body>
         <Card.Text className="header"> <h2 className="header-font">{item.modelName} </h2> {item.modelType}</Card.Text>
         
-        <Card.Img className="card" style={{width:650,height:450}}  src={item.imageUrl}/>
+        <Card.Img className="card" style={{width:625,height:450}}  src={item.imageUrl}/>
         <Card.Text className="price"> Prise : {item.price}</Card.Text>
         <a href="/learn/" className="btn btnn-link" role="button">LEARN </a>
         <a href="/shop/" className="btn btnn-link" role="button">SHOP </a>
-        <Price/>
+       
         
         </Card.Body>
         </Card>
