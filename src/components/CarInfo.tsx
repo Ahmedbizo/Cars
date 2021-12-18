@@ -1,6 +1,6 @@
 import React from "react";
 import cars from "../../public/api/cars.json";
-import { Container, Row, Card, Placeholder } from "react-bootstrap";
+import { Container, Row, Card, Placeholder, Form, Button, Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 
@@ -16,7 +16,33 @@ interface cars {
 export const CarInfo: React.FC = () => {
   return (
     <div>
-          <Placeholder> Choose your Car </Placeholder>
+      <Nav
+            activeKey="/home"
+            onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
+          >
+            <Nav.Item>
+              <Nav.Link href="/home">Active</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="link-1">Link</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="link-2">Link</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="disabled" disabled>
+                Disabled
+              </Nav.Link>
+            </Nav.Item>
+          </Nav>
+          <Form>
+            <Form.Group className="md-8" controlId="formBasicEmail">
+              <Form.Label>Choose Car </Form.Label>
+              <Form.Control type="input" placeholder="Car Name" />
+            
+            </Form.Group>
+
+          </Form>
     < Container fluid className="card-example d-flex  flex-nowrap ">
     {cars.map((item, i) =>
     <Row className="card-example d-flex  flex-nowrap " >  
