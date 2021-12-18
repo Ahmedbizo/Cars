@@ -48,7 +48,7 @@ export const CarInfo: React.FC = () => {
                     <Card.Text className="price"> Prise : {item.price}</Card.Text>
                     <a href="/learn/" className="btn btnn-link" role="button">LEARN </a>
                     <a href="/shop/" className="btn btnn-link" role="button">SHOP </a>
-                    <Button style={{color:'yellow'}} >contact oss</Button>
+                    <Button style={{color:'yellow'}} >Customer Service </Button>
                   
                     
                     </Card.Body>
